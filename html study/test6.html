@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Form Example</title>
+<script LANGUAGE="JavaScript" type="text/javascript">
+function display() {
+
+
+  DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+
+ message = "<b>Your form has been submitted! </b>"
+
+
+
+  message += "<li><b>Salutation: </b>" + document.form1.salutation.value;
+
+  DispWin.document.write(message);
+}
+</script>
+
+
+
+
+
+
+
+</head>
+<body>
+<h1>Enquiry Form</h1>
+
+<form name="form1">
+
+<table> 
+
+
+<tr>
+ <td valign="top">
+  <label for="Salutation">You struggle with deadlines.</label>
+ </td>
+ <td valign="top">
+    <label for="1">1</label>
+      <input type="radio" name="salutation" id="1" value="1">
+      <label for="Mrs">Mrs</label>
+      <input type="radio" name="salutation" id="Mrs" value="Mrs">
+    <label for="Miss">Miss</label>
+      <input type="radio" name="salutation" id="Miss" value="Miss">
+      <label for="male">Dr</label>
+      <input type="radio" name="salutation" id="Dr" value="Dr">      
+
+ </td>
+</tr>
+
+
+
+
+</table>
+
+
+
+</p>
+<p><input TYPE="BUTTON" VALUE="Submit" onClick="display();"></p>
+
+
+<p id="neg"> <br>
+    <input type = "radio" name="question8">1 
+    <input type = "radio" name="question8">2 
+    <input type = "radio" name="question8">3 
+    <input type = "radio" name="question8">4 
+    <input type = "radio" name="question8">5 
+</p>
+</form>
+</body>
+</html>
